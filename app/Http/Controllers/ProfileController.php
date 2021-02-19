@@ -9,13 +9,13 @@ class ProfileController extends Controller
     public function post_profile(Request $request)
     {
 
-        $user = $request->validate([
-            'image' => [''],
-            'cv' => [''],
-            'bio' => ['string', 'min:6'],
-            'tahun_alumni' => ['required', 'min:6'],
-        ]);
+        // $user = $request->validate([
+        //     'image' => [''],
+        //     'cv' => [''],
+        //     'bio' => ['string', 'min:6'],
+        //     'tahun_alumni' => ['required', 'min:6'],
+        // ]);
 
-        auth()->user()->update($request->all());
+        // auth()->user()->update($request->all());
     }
 }

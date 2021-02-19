@@ -18,9 +18,13 @@ use Illuminate\Http\Request;
 
 Route::post('register', 'Auth\AuthController@register');
 Route::post('login', 'Auth\AuthController@login');
+
+
 Route::post('forgot-password', 'Auth\AuthController@forgotpassword')->name('password.reset');
 Route::post('reset-password', 'Auth\AuthController@resetpassword');
 
+
+Route::get('user', 'UserController@get_profile');
 
 
 
